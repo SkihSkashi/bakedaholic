@@ -1,4 +1,4 @@
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 import Amplify from 'aws-amplify';
 import awsconfig from './aws-exports';
@@ -9,20 +9,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
-            <AmplifySignOut />
-    <h2>My App Content</h2>
+      <img src={logo} className="App-logo" alt="logo" />
+        <h1>Hello from V2</h1>
+            {/* <AmplifySignOut /> */}
+        <h2>My App Content</h2>
       </header>
     </div>
   );
