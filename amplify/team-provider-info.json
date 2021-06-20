@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-bakedaholicapp-dev-211510-authRole",
+      "UnauthRoleArn": "arn:aws:iam::658680711641:role/amplify-bakedaholicapp-dev-211510-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::658680711641:role/amplify-bakedaholicapp-dev-211510-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-bakedaholicapp-dev-211510-deployment",
+      "UnauthRoleName": "amplify-bakedaholicapp-dev-211510-unauthRole",
+      "StackName": "amplify-bakedaholicapp-dev-211510",
+      "StackId": "arn:aws:cloudformation:eu-west-1:658680711641:stack/amplify-bakedaholicapp-dev-211510/d98216f0-d1fb-11eb-bb08-0afe7bbd73eb",
+      "AmplifyAppId": "dc1zefbl835x2"
+    },
+    "categories": {
+      "auth": {
+        "bakedaholicappd2016d37": {}
+      }
+    }
+  }
+}
