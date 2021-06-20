@@ -8,9 +8,11 @@ Amplify.configure(awsconfig);
 function App() {
   return (
     <div className="App">
+       <header className="App-header2">
+       <h1>Hello from V2</h1>
+       </header>
       <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello from V2</h1>
             {/* <AmplifySignOut /> */}
         <h2>My App Content</h2>
       </header>
