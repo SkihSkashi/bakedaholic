@@ -9,13 +9,11 @@ function App() {
   return (
     <div className="App">
        <header className="App-header2">
-       <h1>Hello from V2</h1>
+       <h1>Bakedaholic!</h1>
        </header>
-      <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
             {/* <AmplifySignOut /> */}
-        <h2>My App Content</h2>
-      </header>
+        <h2>Welcome to my little shop, where I bake lovely goods. MMMMMM Yum Yum</h2>
     </div>
   );
 }
