@@ -12,20 +12,7 @@ export default function PaymentForm() {
         Payment method
       </Typography>
       <Grid container spacing={3}>
-        {/* <Grid item xs={12} md={6}>
-          <TextField required id="expDate" label="Expiry date" fullWidth autoComplete="cc-exp" />
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <TextField
-            required
-            id="cvv"
-            label="CVV"
-            helperText="Last three digits on signature strip"
-            fullWidth
-            autoComplete="cc-csc"
-          />
-        </Grid> */}
-                <Grid item xs={12}>
+        <Grid item xs={12}>
           <FormControlLabel
             label="CASH"
             control={<Checkbox color="secondary" name="saveCash" value="yes" />}
