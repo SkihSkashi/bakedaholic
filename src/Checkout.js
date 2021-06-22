@@ -13,6 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import Review from './Review';
+import {OrderNum} from './components/OrderNumberGen'
 
 function Copyright() {
   return (
@@ -120,7 +121,7 @@ export default function Checkout() {
                   Thank you for your order.
                 </Typography>
                 <Typography variant="subtitle1">
-                  Your order number is #2001539. We have emailed your order confirmation, and will
+                  Your order number is # {OrderNum()}. We have emailed your order confirmation, and will
                   send you an update when your order has shipped.
                 </Typography>
               </React.Fragment>
