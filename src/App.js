@@ -7,13 +7,15 @@ Amplify.configure(awsconfig);
 
 function App() {
   return (
+    
     <div className="App">
        <header className="App-header2">
        <h1>Bakedaholic!</h1>
        </header>
       <img src={logo} className="App-logo" alt="logo" />
             {/* <AmplifySignOut /> */}
-        <h2>Welcome to my little shop, where I bake lovely goods. MMMMMM Yum Yum</h2>
+        <h2>Welcome back to your lovely app,Let's get started shell we?</h2>
+
     </div>
   );
 }
