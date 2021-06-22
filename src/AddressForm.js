@@ -84,6 +84,16 @@ export default function AddressForm() {
             autoComplete="shipping country"
           />
         </Grid>
+        <Grid item xs={12} sm={6}>
+          <TextField
+            required
+            id="email-address"
+            name="email-address"
+            label="Email Address"
+            fullWidth
+            autoComplete="shipping country"
+          />
+        </Grid>
         <Grid item xs={12}>
           <FormControlLabel
             control={<Checkbox color="secondary" name="saveAddress" value="yes" />}

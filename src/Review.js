@@ -5,20 +5,21 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Grid from '@material-ui/core/Grid';
+import PaymentForm from './PaymentForm';
 
 const products = [
-  { name: 'Product 1', desc: 'A nice thing', price: '$9.99' },
-  { name: 'Product 2', desc: 'Another thing', price: '$3.45' },
-  { name: 'Product 3', desc: 'Something else', price: '$6.51' },
-  { name: 'Product 4', desc: 'Best thing of all', price: '$14.11' },
+  { name: 'Product 1', desc: 'A nice thing', price: 'R 9.99' },
+  { name: 'Product 2', desc: 'Another thing', price: 'R 3.45' },
+  { name: 'Product 3', desc: 'Something else', price: 'R 6.51' },
+  { name: 'Product 4', desc: 'Best thing of all', price: 'R 14.11' },
   { name: 'Shipping', desc: '', price: 'Free' },
 ];
-const addresses = ['1 Material-UI Drive', 'Reactville', 'Anytown', '99999', 'USA'];
+const addresses = ['22 Olive Schreiner street', 'Parow North', 'Cape Town', '7500',
+ 'South Africa'];
 const payments = [
-  { name: 'Card type', detail: 'Visa' },
-  { name: 'Card holder', detail: 'Mr John Smith' },
-  { name: 'Card number', detail: 'xxxx-xxxx-xxxx-1234' },
-  { name: 'Expiry date', detail: '04/2024' },
+  { name: 'Payment Type', detail: 'Cash' },
+  { name: 'Tendered Amount', detail: 'R 500' },
+  { name: 'Banking Details', detail: 'Banking Details' },
 ];
 
 const useStyles = makeStyles((theme) => ({
@@ -51,7 +52,7 @@ export default function Review() {
         <ListItem className={classes.listItem}>
           <ListItemText primary="Total" />
           <Typography variant="subtitle1" className={classes.total}>
-            $34.06
+            R 34.06
           </Typography>
         </ListItem>
       </List>
@@ -60,7 +61,7 @@ export default function Review() {
           <Typography variant="h6" gutterBottom className={classes.title}>
             Shipping
           </Typography>
-          <Typography gutterBottom>John Smith</Typography>
+          <Typography gutterBottom>Pierre Manson</Typography>
           <Typography gutterBottom>{addresses.join(', ')}</Typography>
         </Grid>
         <Grid item container direction="column" xs={12} sm={6}>
