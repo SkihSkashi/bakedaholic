@@ -13,7 +13,8 @@ import Typography from '@material-ui/core/Typography';
 import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import Review from './Review';
-import {OrderNum} from './components/OrderNumberGen'
+import {OrderNum} from './components/OrderNumberGen';
+import { Redirect } from "react-router-dom";
 
 function Copyright() {
   return (
@@ -80,7 +81,7 @@ function getStepContent(step) {
   }
 }
 
-export default function Checkout() {
+function Checkout() {
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(0);
 
@@ -152,3 +153,4 @@ export default function Checkout() {
     </React.Fragment>
   );
 }
+export default Checkout;

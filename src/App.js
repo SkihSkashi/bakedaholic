@@ -1,21 +1,38 @@
 import logo from './logo.svg';
-import './App.css';
+import './Home';
 import Amplify from 'aws-amplify';
 import awsconfig from './aws-exports';
-// import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
+import Routes from "./Routes";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { LinkContainer } from "react-router-bootstrap";
+
+
 Amplify.configure(awsconfig);
 
 function App() {
   return (
-    
     <div className="App">
-       <header className="App-header2">
-       <h1>Bakedaholic!</h1>
-       </header>
-      <img src={logo} className="App-logo" alt="logo" />
-            {/* <AmplifySignOut /> */}
-        <h2>Welcome back to your lovely app,Let's get started shell we?</h2>
+      <Navbar collapseOnSelect bg="light" expand="md" className="Home lander h1">
+          <LinkContainer to="/">
+              <Navbar.Brand className="font-weight-bold text-muted">
+                Home
+              </Navbar.Brand>
+            </LinkContainer>
 
+
+          <Nav activeKey={window.location.pathname}>
+            <LinkContainer to="/checkout">
+              <Nav.Link>Checkout</Nav.Link>
+            </LinkContainer>
+            {/* <LinkContainer to="/login">
+              <Nav.Link>Login</Nav.Link>
+            </LinkContainer> */}
+
+          </Nav>
+   
+      </Navbar>
+      <Routes />
     </div>
   );
 }
