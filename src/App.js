@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './Home';
+import './Home.css';
 import Amplify from 'aws-amplify';
 import awsconfig from './aws-exports';
 import Routes from "./Routes";
@@ -13,7 +13,7 @@ Amplify.configure(awsconfig);
 function App() {
   return (
     <div className="App">
-      <Navbar collapseOnSelect bg="light" expand="md" className="Home lander h1">
+      {/* <Navbar collapseOnSelect bg="light" expand="md" className="Home lander h1">
           <LinkContainer to="/">
               <Navbar.Brand className="font-weight-bold text-muted">
                 Home
@@ -25,13 +25,13 @@ function App() {
             <LinkContainer to="/checkout">
               <Nav.Link>Checkout</Nav.Link>
             </LinkContainer>
-            {/* <LinkContainer to="/login">
+            <LinkContainer to="/login">
               <Nav.Link>Login</Nav.Link>
-            </LinkContainer> */}
+            </LinkContainer>
 
           </Nav>
    
-      </Navbar>
+      </Navbar> */}
       <Routes />
     </div>
   );

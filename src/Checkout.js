@@ -125,6 +125,15 @@ function Checkout() {
                   Your order number is # {OrderNum()}. We have emailed your order confirmation, and will
                   send you an update when your order is completed.
                 </Typography>
+                <Button
+                  type="submit"
+                  fullWidth
+                  variant="contained"
+                  color="primary"
+                  className={classes.submit} href="/?email=pierremanson22%40gmail.com&password=WobbaGong55"
+                >
+                  Home
+                </Button>
               </React.Fragment>
             ) : (
               <React.Fragment>
