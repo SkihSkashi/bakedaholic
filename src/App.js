@@ -6,7 +6,7 @@ import Routes from "./Routes";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { LinkContainer } from "react-router-bootstrap";
-
+import {withAuthenticator } from '@aws-amplify/ui-react';
 
 Amplify.configure(awsconfig);
 
@@ -36,4 +36,4 @@ function App() {
     </div>
   );
 }
-export default App;
+export default withAuthenticator(App);
